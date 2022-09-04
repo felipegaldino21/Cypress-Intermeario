@@ -7,7 +7,7 @@ describe('Create Project', () => {
         cy.login()
     });
 
-    it.only('succesfully', () => {
+    it('succesfully', () => {
         const project ={
             name:`project-${faker.random.uuid()}`,
             description: faker.random.words(5)
